@@ -1,10 +1,12 @@
-x = int(input())
+s = "нет такого месяца"
+months = {12: "Зима", 1: "Зима", 2: "Зима", 3: "Весна", 4: "Весна", 5: "Весна", 6: "Лето", 7: "Лето", 8: "Лето",
+          9: "Осень", 10: "Осень", 11: "Осень"}
 
-if x % 2 != 0:
-    print("Плохо")
-elif x == 4 or x == 2:
-    print("Неплохо")
-elif x > 5 and x < 21:
-    print("Так себе")
-else:
-    print("Отлично")
+def season(month):
+    global s
+    if month in months:
+        s = months[month]
+    print(s)
+
+month = int(input())
+season(month)

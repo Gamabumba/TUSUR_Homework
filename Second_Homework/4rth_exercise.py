@@ -1,8 +1,7 @@
-text = input()
-text_lits = []
+def reverse(numbers):
+    numbers_res = numbers[::-1]
+    print(numbers_res)
 
-for i in text:
-    if i.istitle():
-        text_lits.append(i)
 
-print("".join(text_lits))
+numbers = [1, 2, 3, 27]
+reverse(numbers)

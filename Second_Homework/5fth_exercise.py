@@ -1,16 +1,10 @@
-text = input()
-text_lits = text.split()
-count = 0
+text = "привет мир!"
+f_text = []
 
-for i in text_lits:
-    if not i.isdigit():
-        count += 1
-        if count == 3:
-            break
+for i in range(len(text)):
+    if i >= 3 and i <= 8:
+        f_text.append(text[i].upper())
     else:
-        count = 0
+        f_text.append(text[i])
 
-if count == 3:
-    print(True)
-else:
-    print(False)
+print(''.join(f_text))
